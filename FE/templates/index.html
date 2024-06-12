@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h1>Weather App</h1>
+      <form action="/weather" method="post">
+        <label for="city">Enter city name:</label>
+        <input type="text" id="city" name="city" />
+        <button class="submit-button" type="submit">Get Weather</button>
+      </form>
+      <div class="modal">
+        <button class="close-button" aria-label="Close" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-content"></div>
+        <p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>
+</html>

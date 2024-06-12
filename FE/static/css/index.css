@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+  height: 100vh;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  width: 50%;
+  padding: 5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 1rem;
+}
+
+.modal span {
+  display: flex;
+}
+
+.close-button {
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
